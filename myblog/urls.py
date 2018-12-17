@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 # from django.contrib import admin
-from myblog.views import paginator_view
+from .views import *
 urlpatterns = [
-    url(r'^paginator_view/',paginator_view,name='paginator_view'),
+    url(r'^paginator_view/',PaginatorView.as_view(),name='paginator_view'),
 ]
