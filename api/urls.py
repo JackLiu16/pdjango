@@ -24,6 +24,4 @@ urlpatterns = [
     # url(r'^api_view/',UserViewSet.as_view({'get': 'list','post': 'create'}),name='api_view'),
     # url(r'^api_auth/',GroupViewSet.as_view({'get': 'list','post': 'create'}), name='api_auth'),
     url(r'^',include(router.urls)),
-    url(r'^api_auth/', include('rest_framework.urls',
-                     namespace='rest_framework'))
 ]
